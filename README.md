@@ -21,3 +21,9 @@ Android 		 								Windows 						              IOS
 Android 		 								Windows 						              IOS
 
 ![1658378695990](image/README/1658378695990.png)
+
+###### For Forgot Password
+
+Android 		 								Windows 						              IOS
+
+![1658378815947](image/README/1658378815947.png)

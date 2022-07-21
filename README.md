@@ -7,19 +7,24 @@ An activity website project to create a log in and register page using Ionic fra
 ###### For Home Page in Sample Form
 
 <pre>            Android 		 		  Windows 				IOS</pre>
+
 ![1658378303210](image/README/1658378303210.png)
 
 ###### For Sign Up
 
-<pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658378476940](image/README/1658378476940.png)
-
-###### For Log In
 
 <pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658378695990](image/README/1658378695990.png)
+###### ![1658391680432](image/README/1658391680432.png)
+
+![1658391718662](image/README/1658391718662.png)
+
+For Log In
+
+<pre>            Android 		 		  Windows 				IOS</pre>
+
+![1658391750386](image/README/1658391750386.png)
 
 ###### For Forgot Password
 

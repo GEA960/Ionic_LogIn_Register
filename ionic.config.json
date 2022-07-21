@@ -1,0 +1,7 @@
+{
+  "name": "Ionic_LogIn_Register",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

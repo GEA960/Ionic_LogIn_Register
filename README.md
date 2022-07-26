@@ -37,3 +37,6 @@ All fields on the register and login page has an error warning message if the us
 **Side menu bar on the home page**
 
 ![1658830494080](image/README/1658830494080.png)
+
+**Action Sheet on the homepage
+![1658837921993](image/README/1658837921993.png)**

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .container h1{
+    color: green;
+  }
+  
+  .container img{
+    width: 120px;
+    height: auto;
+  }

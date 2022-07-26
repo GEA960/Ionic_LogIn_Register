@@ -26,4 +26,4 @@ For Log In
 
 <pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658378815947](image/README/1658378815947.png)
+![1658822005972](image/README/1658822005972.png)

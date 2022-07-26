@@ -27,3 +27,8 @@ For Log In
 <pre>            Android 		 		  Windows 				IOS</pre>
 
 ![1658822005972](image/README/1658822005972.png)
+
+
+**Notes:**
+All fields on the register and login page has an error warning message if the user leave it blank. Just like what the image below displays:
+![1658822655429](image/README/1658822655429.png)

@@ -8,15 +8,20 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  
+  <div class="flex-center">
+    <div>
+    
+      <ion-card>
+        <ion-card-content>
     <ion-item lines="full">
       <ion-label position="floating">FIRST NAME</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="firstname" [(ngModel)]="firstname"></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label position="floating">LAST NAME</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="lastname" [(ngModel)]="lastname"></ion-input>
     </ion-item>
 
     <ion-list-header>
@@ -24,55 +29,54 @@
      </ion-list-header>
     <ion-radio-group>
       <ion-item>
-        <ion-label>Male</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-label>Male <ion-icon name="male"></ion-icon></ion-label>
+        <ion-radio slot="start" value="male"></ion-radio>
       </ion-item>
-
-    <ion-item>
-      <ion-label>Female</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+      <ion-item>
+        <ion-label>Female <ion-icon name="female"></ion-icon></ion-label>
+        <ion-radio slot="start" value="female"></ion-radio>
+      </ion-item>
     
   </ion-radio-group>   
 
     <ion-item lines="full">
       <ion-label position="floating">ADDRESS</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="address" [(ngModel)]="address"></ion-input>
     </ion-item>
 
         <ion-item lines="full">
       <ion-label position="floating">STATUS</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="status" [(ngModel)]="status"></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label position="floating">RELIGION</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="religion" [(ngModel)]="religion"></ion-input>
     </ion-item>    
 
     <ion-item>
       <div class="bday">
         <ion-label position="floating">Date of Birth</ion-label>
-        &nbsp;<ion-input type="Date"></ion-input>
+        &nbsp;<ion-input type="Date" [(ngModel)]="bdate"></ion-input>
       </div>
     </ion-item>
 
-    <ion-item lines="full">
+    <ion-item>
       <ion-label position="floating">EMAIL</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
     </ion-item>
-
-    <ion-item lines="full">
-      <ion-label position="floating">PASSWORD</ion-label>
-      <ion-input type="password" required></ion-input>
+    <ion-item>
+        <ion-label position="floating">PASSWORD</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
-
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" expand="block">SIGN UP</ion-button>
-      </ion-col>
-    </ion-row>
-    
-  </form>
-
-</ion-content>
+    <ion-item>
+      <ion-label position="floating">REPEAT PASSWORD</ion-label>
+      <ion-input type="password" [(ngModel)]="rpassword"></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="success" (click)="register()"><ion-icon name="create-outline"></ion-icon>Create Account</ion-button>
+    <ion-button expand="block" fill="clear" color="success" (click)="login()"><ion-icon name="log-in-outline"></ion-icon>Back to Login</ion-button>
+  </ion-card-content>
+  </ion-card>
+  </div>
+  </div>
+  </ion-content>

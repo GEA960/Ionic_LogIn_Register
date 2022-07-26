@@ -34,13 +34,6 @@ export class RegistrationPage implements OnInit {
         duration: 3000
       });
       (await toast).present();
-    }else if(this.gender==""){
-      const toast = this.toastCtrl.create({
-        message: 'Gender cannot be empty',
-        duration: 3000
-      });
-      (await toast).present();
-
     }else if(this.address==""){
     const toast = this.toastCtrl.create({
       message: 'address cannot be empty',
@@ -59,16 +52,19 @@ export class RegistrationPage implements OnInit {
       message: 'Religion cannot be empty',
       duration: 3000
     });
+    (await toast).present();
   }else if(this.bdate==""){
     const toast = this.toastCtrl.create({
       message: 'Birthdate cannot be empty',
       duration: 3000
     });
+    (await toast).present();
   }else if(this.email==""){
     const toast = this.toastCtrl.create({
       message: 'Email cannot be empty',
       duration: 3000
     });
+    (await toast).present();
   }else if(this.password==""){
     const toast = this.toastCtrl.create({
       message: 'Password cannot be empty',
@@ -82,12 +78,12 @@ export class RegistrationPage implements OnInit {
     });
     (await toast).present();
   }else{
-    this.router.navigate(['home'])
+    this.router.navigate(['homepage'])
   }
 }
 
   login(){
-    this.router.navigate(['login'])
+    this.router.navigate(['homepage'])
   }
 
   ngOnInit() {

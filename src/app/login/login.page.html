@@ -8,22 +8,21 @@
 </ion-header>
 
 <ion-content>
-  <form>
     <ion-item lines="full">
       <ion-label position="floating">EMAIL</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label position="floating">PASSWORD</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">SIGN IN</ion-button>
+        <ion-button type="submit" expand='block' color="danger" expand="block" (click)="login()">SIGN IN</ion-button>
         <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
       </ion-col>
     </ion-row>
-  </form>
+
 </ion-content>

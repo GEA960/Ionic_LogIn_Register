@@ -83,7 +83,7 @@ export class RegistrationPage implements OnInit {
 }
 
   login(){
-    this.router.navigate(['homepage'])
+    this.router.navigate(['login'])
   }
 
   ngOnInit() {

@@ -8,13 +8,12 @@ An activity website project to create a log in and register page using Ionic fra
 
 <pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658402912091](image/README/1658402912091.png)
+![1658821838994](image/README/1658821838994.png)
 
 ###### For Sign Up
 
 <pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658391718662](image/README/1658391718662.png)
 
 For Log In
 

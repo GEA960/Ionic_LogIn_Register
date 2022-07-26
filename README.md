@@ -20,7 +20,7 @@ For Log In
 
 <pre>            Android 		 		  Windows 				IOS</pre>
 
-![1658391750386](image/README/1658391750386.png)
+![1658821957012](image/README/1658821957012.png)
 
 ###### For Forgot Password
 

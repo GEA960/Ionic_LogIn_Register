@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
       });
       (await toast).present();
     }else{
-      this.router.navigate(['home'])
+      this.router.navigate(['homepage'])
     }
   }
 

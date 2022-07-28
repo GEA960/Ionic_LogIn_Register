@@ -15,36 +15,61 @@ export class LoginPage implements OnInit {
 
   email: string = "";
   password: string = "";
+  user: any;
 
-  constructor(private router: Router, public toastCtrl: ToastController, public navCtrl: NavController, public loadingCtrl: LoadingController) { }
+  constructor
+  (
+    private router: Router, 
+    public toastCtrl: ToastController,
+    public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
+    public afauth: AngularFireAuth,
+    public afs: AngularFirestore
 
-  async login(){
-      if(this.email == ""){
-      const toast = this.toastCtrl.create({
-        message: 'Email cannot be empty',
-        duration: 3000
-      });
-      (await toast).present();
-    }else if(this.password==""){
-      const toast = this.toastCtrl.create({
-        message: 'Password cannot be empty',
-        duration: 3000
-      });
-      (await toast).present();
-    }else{
-      this.router.navigate(['homepage'])
-    }
-  }
-
-  register(){
-    this.router.navigate(['register'])
-  }
-
-  forgot(){
-    this.router.navigate(['forgot'])
-  }
+  ) { }
 
   ngOnInit() {
   }
+  async login(){
+
+  if(this.email == ""){
+    this.toast('Email cannot be empty', 'danger');
+  }else if(this.password==""){
+    this.toast('Password cannot be empty', 'danger');
+  }else{
+    const loading = await this.loadingCtrl.create({});
+    loading.present();
+
+    this.afauth.signInWithEmailAndPassword(this.email, this.password).then((data) =>{
+      if(!data.user.emailVerified){
+        loading.dismiss();
+        this.toast('Please verify your email and address', 'warning');
+        this.afauth.signOut();
+      }else{
+        loading.dismiss();
+        this.router.navigate(['home'])
+      }
+    })
+    .catch(error =>{
+      loading.dismiss();
+       this.toast(error.message, 'danger')
+    })
+
+  }
+}
+
+register(){
+  this.router.navigate(['register'])
+}
+async toast(message, status){
+  const toast = await this.toastCtrl.create({
+    message: message,
+    color: status,
+    duration: 3000,
+    position: 'top'
+  });
+
+  toast.present();
+}
 
 }

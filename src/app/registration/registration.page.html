@@ -62,6 +62,11 @@
     </ion-item>
 
     <ion-item>
+      <ion-label position="floating">USERNAME</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
       <ion-label position="floating">EMAIL</ion-label>
       <ion-input type="email" [(ngModel)]="email"></ion-input>
     </ion-item>
@@ -73,7 +78,7 @@
       <ion-label position="floating">REPEAT PASSWORD</ion-label>
       <ion-input type="password" [(ngModel)]="rpassword"></ion-input>
     </ion-item>
-    <ion-button expand="block" color="danger" (click)="register()"><ion-icon name="create-outline"></ion-icon>Create Account</ion-button>
+    <ion-button type="submit" expand="block" color="danger" (click)="register()"><ion-icon name="create-outline"></ion-icon>Create Account</ion-button>
     <ion-button expand="block" fill="clear" color="blue" (click)="login()"><ion-icon name="log-in-outline"></ion-icon>Back to Login</ion-button>
   </ion-card-content>
   </ion-card>

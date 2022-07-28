@@ -47,7 +47,7 @@ export class LoginPage implements OnInit {
         this.afauth.signOut();
       }else{
         loading.dismiss();
-        this.router.navigate(['home'])
+        this.router.navigate(['homepage'])
       }
     })
     .catch(error =>{

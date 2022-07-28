@@ -20,13 +20,21 @@ const routes: Routes = [
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
   {
+    path: 'trivia',
+    loadChildren: () => import('./trivia/trivia.module').then( m => m.TriviaPageModule)
+  },
+  {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
     path: 'homepage',
     loadChildren: () => import('./pages/homepage/homepage.module').then( m => m.HomepagePageModule)
+  },  {
+    path: 'trivia',
+    loadChildren: () => import('./trivia/trivia.module').then( m => m.TriviaPageModule)
   },
+
 ];
 
 @NgModule({

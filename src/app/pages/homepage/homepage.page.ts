@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController, ActionSheetController, AlertController, ModalController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -9,7 +10,7 @@ import { PopoverController, ActionSheetController, AlertController, ModalControl
 export class HomepagePage {
   
   
-  constructor(public actionSheetCtrl: ActionSheetController) { }
+  constructor(public popoverCtrl: PopoverController, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController, private modalCtrl: ModalController, private router: Router) {}
 
   async showActionSheet() {
     await this.actionSheetCtrl.create({
@@ -36,5 +37,8 @@ export class HomepagePage {
       ]
     }).then(res => res.present());
 
+  }
+  trivias(){
+    this.router.navigate(['trivia'])
   }
 }

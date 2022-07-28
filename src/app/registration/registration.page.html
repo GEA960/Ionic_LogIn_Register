@@ -24,10 +24,10 @@
       <ion-input type="lastname" [(ngModel)]="lastname"></ion-input>
     </ion-item>
 
-    <ion-list-header>
-      GENDER:
-     </ion-list-header>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)]="gender">
+      <ion-list-header>
+        <ion-label>Gender</ion-label>
+      </ion-list-header>
       <ion-item>
         <ion-label>Male <ion-icon name="male"></ion-icon></ion-label>
         <ion-radio slot="start" value="male"></ion-radio>
@@ -36,8 +36,7 @@
         <ion-label>Female <ion-icon name="female"></ion-icon></ion-label>
         <ion-radio slot="start" value="female"></ion-radio>
       </ion-item>
-    
-  </ion-radio-group>   
+    </ion-radio-group>
 
     <ion-item lines="full">
       <ion-label position="floating">ADDRESS</ion-label>

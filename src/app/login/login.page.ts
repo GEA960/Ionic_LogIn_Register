@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { NavController, ToastController, LoadingController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-login',

@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBKCCxLWqwxcNMmSB6spDGRoiD9_CcQt-s",
+  authDomain: "lazatech-educate2.firebaseapp.com",
+  projectId: "lazatech-educate2",
+  storageBucket: "lazatech-educate2.appspot.com",
+  messagingSenderId: "384564131649",
+  appId: "1:384564131649:web:4b78403d7a84d4a39ed3c0"
+  }
 };
 
 /*

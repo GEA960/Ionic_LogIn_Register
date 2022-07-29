@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-trivia',
@@ -9,15 +9,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TriviaPage implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  public question: any;
+
+  constructor(private http: HttpClient, public api: ApiService) { }
 
   ngOnInit() {
     this.trivia()
   }
 
   trivia(){
-    this.http.get("https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple").subscribe((data) => {
-      console.log(data);
+    this.api.apiConnect().subscribe(result=>{
+      this.question=result['results'];
     })
   }
 

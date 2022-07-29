@@ -5,16 +5,22 @@
         <ion-icon name="arrow-back-outline"></ion-icon>
       </ion-back-button>
     </ion-buttons>
+    <ion-title>Trivias</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
+
+  <ion-card *ngFor="let item of question">
+
     <ion-card-header>
-      <ion-card-title> Trivias</ion-card-title>
+      <ion-card-title>Category: {{item.category}}</ion-card-title>
     </ion-card-header>
+
     <ion-card-content>
-      <ion-label></ion-label>
+      <p><ion-label>Question: {{item.question}}</ion-label></p>
+      <p><ion-label>Answer: {{item.correct_answer}}</ion-label></p>
     </ion-card-content>
   </ion-card>
+
 </ion-content>

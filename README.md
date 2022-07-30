@@ -41,7 +41,6 @@ All fields on the register and login page has an error warning message if the us
 **Action Sheet on the homepage**
 ![1658837921993](image/README/1658837921993.png)
 
-
 **LogIn Auth Page:**
 ![1659143484564](image/README/1659143484564.png)
 ![1659143333845](image/README/1659143333845.png)
@@ -52,17 +51,16 @@ From the image above, you can see that after inserting the log in credentials of
 ![1659143941550](image/README/1659143941550.png)
 The user will have to insert his/her credentials and click the create account button to register with the app and save it to the firebase database. After creating an account, the credentials were sent to the database as shown below;
 ![1659144070947](image/README/1659144070947.png)
+The image below shows the configuration that connects the app to the firebase database for authentication;
 
-**Trivia Api**
+**![1659147796371](image/README/1659147796371.png)
+Trivia Api**
 ![1659143746419](image/README/1659143746419.png)
 
 The api used on this app is the trivia api where it provide the app with a large number of trivia from the database of Open Trivia Database.
 
 **Video Demo**
 
-1. 
-
 [![Watch the video](https://github.com/Gabriel19-00477/Ionic_LogIn_Register/blob/master/image/mq1.jpg)](https://www.youtube.com/watch?v=xIzPb-uVxlc)
 
-2.
 [![Watch the video](https://github.com/Gabriel19-00477/Ionic_LogIn_Register/blob/master/image/Screenshot%202022-07-30%20092605.png)](https://youtu.be/zrZdW5bxoac)

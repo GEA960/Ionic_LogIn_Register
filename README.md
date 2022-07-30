@@ -65,4 +65,4 @@ The api used on this app is the trivia api where it provide the app with a large
 [![Watch the video](https://github.com/Gabriel19-00477/Ionic_LogIn_Register/blob/master/image/mq1.jpg)](https://www.youtube.com/watch?v=xIzPb-uVxlc)
 
 2.
-[![Watch the video](https://github.com/Gabriel19-00477/Ionic_LogIn_Register/blob/master/image/mq1.jpg)](https://youtu.be/zrZdW5bxoac)
+[![Watch the video](https://github.com/Gabriel19-00477/Ionic_LogIn_Register/blob/master/image/Screenshot%202022-07-30%20092605.png)](https://youtu.be/zrZdW5bxoac)
